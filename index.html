@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="./face.html" target="_blank" rel="noopener">次へ</a>
+        <script>
+            $(document).ready(function(){
+                $('a[href="./face.html"]').on('click',function(){
+                    window.open("./face.html", '_blank')
+                    window.location.href = './backside.html'
+                })
+            });
+        </script>
+    </body>
+</html>

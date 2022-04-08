@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="target"></div>
+        <input type="submit" value="次へ" id="btn">
+        <script>
+            $(document).ready(function(){
+                $(window).on('load',function(){
+                    $('#btn').trigger('click');
+                });
+                $('#btn').on('click',function(){
+                    $('.target').html('ボタンが押されました');
+                    window.location.href = '/';
+                });
+            });
+        </script>
+    </body>
+</html>
